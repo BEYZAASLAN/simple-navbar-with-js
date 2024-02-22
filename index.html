@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="" class="nav-branding">Logo</a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Contact</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+  <div class="title m-3 px-3">
+    <h5 class="subtitle mt-4 p-3 text-info">SORU-1:</h5>
+    <p class="text-info px-3">Ne oluyor da butona bastığımda alttaki linkler görünmez ise görünür oluyor, görünürise
+      görünmez oluyor? Bunun mantığı nedir, nasıl yapılmış?</p>
+    <p class="text-black"> Bu durum, JavaScript'in myFunction() adlı fonksiyonunda gerçekleşir. Fonksiyonun işlevi, menü
+      simgesine tıklandığında alt menünün görünürlüğünü değiştirmektir.
+      myFunction() fonksiyonu, menü simgesine tıklandığında tetiklenir.
+      Fonksiyon içinde, document.getElementById("myLinks") kullanılarak alt menünün HTML elemanı alınır.
+      Alınan bu elemanın display özelliği kontrol edilir. Bu özellik, HTML elemanının görünürlüğünü belirler.
+      Eğer alt menü görünürse (yani, display özelliği block ise), bu durumda if koşulu doğru olur ve alt menü
+      görünürlüğü none olarak değiştirilir.
+      Böylece alt menü gizlenir.
+      Eğer alt menü gizliyse (yani, display özelliği none ise), bu durumda else koşulu doğru olur ve alt menü
+      görünürlüğü block olarak değiştirilir.
+      Böylece alt menü görünür hale gelir.
+      Yani, bu fonksiyon, menü simgesine her tıklandığında alt menünün görünürlüğünü tersine çevirir.</p>
+  </div>
+
+  <div class="title m-3 px-3">
+    <h5 class="subtitle mt-4 p-3 text-info">SORU-2:</h5>
+    <p class="text-info px-3">Bunu responsive bir şekilde nasıl yapabilirdik? Masaüstü ekranında normal navbargösterip
+      mobil ekranda bu şekilde açılıp kapanan mobil navbar nasıl yapabiliriz?</p>
+    <p class="text-black"> Responsive bir şekilde hem masaüstü hem de mobil cihazlarda çalışacak bir navbar oluşturmak
+      için CSS medya sorgularını kullanabiliriz. Masaüstü ekranlarda normal bir navbar göstermek için, medya sorgularını
+      kullanarak ekran genişliğini kontrol edebiliriz. Mobil cihazlarda ise hamburger menüsü olarak adlandırılan bir
+      simgeyi tıklayarak navbar'ın açılıp kapanmasını sağlayabiliriz.JavaScript kullanarak, hamburger menüsüne
+      tıklandığında menüyü açıp kapatabiliriz.
+    </p>
+  </div>
+
+  <div class="title m-3 px-3">
+    <h5 class="subtitle mt-4 p-3 text-info">SORU-3:</h5>
+    <p class="text-info px-3">Masaüstünde düz olan, mobilde açılıp kapanabilen bir navbar yapalım ancakçalışma mantığı
+      style değiştirerek değil class ekleyip çıkararak olsun
+    </p>
+    <p class="text-black">Cevabı uygulanmıştır.</p>
+
+
+  </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
